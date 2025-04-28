@@ -588,12 +588,105 @@ body.light-mode .theme-toggle-icon .fa-moon {
   opacity: 0;
 }
 
-/* About Section - To be implemented by Team Member 1 */
-/* 
+/* About Section */
 .about {
-  /* About section styles will go here */
-/*}
-*/
+  padding: var(--spacing-xl) 0;
+  background-color: var(--dark-color);
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover img {
+  transform: scale(1.03);
+}
+
+.about-content h6 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.my-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.single-info {
+  margin-bottom: 15px;
+}
+
+.single-info span {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.single-info p {
+  display: inline;
+  color: var(--light-color);
+  margin: 0;
+}
+
+.follow-social {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.follow-social h5 {
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.follow-social li {
+  margin-right: var(--spacing-sm);
+}
+
+.follow-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-color);
+  transition: all var(--transition-speed);
+}
+
+.follow-social a:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  transform: translateY(-3px);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
 
 /* Services Section */
 .services {
