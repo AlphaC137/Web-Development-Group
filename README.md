@@ -6,6 +6,7 @@ This responsive portfolio website was developed as part of the Power Learn Proje
 ## Team Members
 This project was completed by:
 - Sydwell Lebeloane
+- Dzel Babu
 
 ## Features
 - Responsive design using modern CSS techniques
@@ -76,8 +77,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Power Learn Project for the opportunity
 - All open-source tools and libraries used in this project
 - Team members for participation
-
--- Team Member 2 has Completed Sections:
-Services section (HTML, CSS, and content)
-Services Features grid
-"More Services" toggle functionality
