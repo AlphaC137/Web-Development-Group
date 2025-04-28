@@ -168,19 +168,78 @@ document.addEventListener('DOMContentLoaded', function() {
   initScrollAnimations();
   initParallaxEffect();
   
-  // Skill bars animation - To be implemented by Team Member 3
-  /*
-  function initSkillBarsAnimation() {
-    // Skill bars animation code will go here
-  }
-  */
+// Animate skill bars when they come into view
+function initSkillBarsAnimation() {
+  if (!('IntersectionObserver' in window)) return;
   
-  // Portfolio hover effects - To be implemented by Team Member 3
-  /*
-  function initPortfolioHoverEffects() {
-    // Portfolio hover effects code will go here
-  }
-  */
+  const progressBars = document.querySelectorAll('.progress-bar');
+  const options = {
+    root: null,
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const width = bar.getAttribute('aria-valuenow') + '%';
+        
+        // Animate the progress bar width
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 200);
+        
+        observer.unobserve(bar);
+      }
+    });
+  }, options);
+  
+  progressBars.forEach(bar => {
+    // Reset the width to 0 before animation
+    bar.style.width = '0%';
+    observer.observe(bar);
+  });
+}
+
+// Portfolio hover effects with smooth transitions
+function initPortfolioHoverEffects() {
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  
+  portfolioItems.forEach(item => {
+    const overlay = item.querySelector('.portfolio-overlay');
+    
+    item.addEventListener('mouseenter', () => {
+      if (overlay) {
+        overlay.style.opacity = '1';
+        
+        // Staggered animation for overlay content
+        const title = overlay.querySelector('h3');
+        const desc = overlay.querySelector('p');
+        
+        if (title) title.style.transform = 'translateY(0)';
+        if (desc) {
+          setTimeout(() => {
+            desc.style.transform = 'translateY(0)';
+          }, 100);
+        }
+      }
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      if (overlay) {
+        overlay.style.opacity = '0';
+        
+        // Reset transforms
+        const title = overlay.querySelector('h3');
+        const desc = overlay.querySelector('p');
+        
+        if (title) title.style.transform = 'translateY(-20px)';
+        if (desc) desc.style.transform = 'translateY(20px)';
+      }
+    });
+  });
+}
   
   // Reveal animations when scrolling
   window.addEventListener('scroll', debounce(function() {
