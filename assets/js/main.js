@@ -151,13 +151,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
   });
 
-  // More Services Button Functionality - To be implemented by Team Member 2
-  /*
-  const moreServicesBtn = document.getElementById('more-services-btn');
-  const hiddenServices = document.querySelectorAll('.hidden-service');
-
-  if (moreServicesBtn) {
-    // More services button functionality will go here
-  }
-  */
+// More Services Button Functionality
+if (moreServicesBtn) {
+  moreServicesBtn.addEventListener('click', function() {
+    // Toggle hidden services visibility
+    hiddenServices.forEach(service => {
+      service.classList.toggle('show');
+    });
+    
+    // Toggle button active state and text
+    this.classList.toggle('active');
+    
+    if (this.classList.contains('active')) {
+      this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+    } else {
+      this.innerHTML = 'More Services <i class="fas fa-chevron-down"></i>';
+    }
+  });
+}
 });
