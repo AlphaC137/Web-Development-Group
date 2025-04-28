@@ -1,6 +1,6 @@
 /* 
 * Main Stylesheet
-* Author: Your Team
+* Author: Sydwell & Dzel
 * Version: 1.0
 */
 
@@ -194,8 +194,8 @@ img {
 .nav-menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align menu items to right */
-  margin-left: auto; /* Push menu to right */
+  justify-content: flex-end;
+  margin-left: auto;
   margin-right: 1.5rem; /* Add space between menu and actions */
 }
 
@@ -1102,13 +1102,6 @@ body.light-mode .theme-toggle-icon .fa-moon {
   font-weight: 500;
 }
 
-/* Portfolio Section - To be implemented by Team Member 3 */
-/*
-.portfolio {
-  /* Portfolio section styles will go here */
-/*}
-*/
-
 /* Clients Logo Section */
 .clients {
   padding: var(--spacing-lg) 0;
@@ -1158,13 +1151,6 @@ body.light-mode .theme-toggle-icon .fa-moon {
     transform: translateX(-100%);
   }
 }
-
-/* Contact Section - To be implemented by Team Member 3 */
-/*
-.contact {
-  /* Contact section styles will go here */
-/*}
-*/
 
 /* Footer */
 .footer {

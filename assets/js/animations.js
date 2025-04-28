@@ -1,6 +1,6 @@
 /**
  * Animations JavaScript File
- * Author: Group 214
+ * Author: Sydwell & Dzel
  * Version: 1.0
  */
 
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to type or erase text
     function typeText() {
-      // Clear any existing timeout
       if (timeoutId) clearTimeout(timeoutId);
       
       if (!isDeleting) {

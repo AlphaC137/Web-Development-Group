@@ -47,7 +47,7 @@ Web-Development-Group/
 ```
 
 ## Setup and Installation
-1. Clone the repository: `git clone https://github.com/yourusername/ui-portfolio.git`
+1. Clone the repository: `git clone https://github.com/alphac137/web-Development-Group.git`
 2. Open `index.html` in your browser
 
 ## Key Sections

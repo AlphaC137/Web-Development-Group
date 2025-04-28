@@ -1,6 +1,6 @@
 /**
  * Main JavaScript File
- * Author: group 214
+ * Author: Sydwell & Dzel
  * Version: 1.0
  */
 
