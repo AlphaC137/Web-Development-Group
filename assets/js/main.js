@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
+<<<<<<< HEAD
   });
 
   // Preloader
@@ -161,3 +162,77 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   */
 });
+=======
+  
+    // Back to top button click
+    if (backToTop) {
+      backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        // Skip for dropdown toggles on mobile
+        if (this.parentNode.classList.contains('dropdown') && window.innerWidth < 992) {
+          return;
+        }
+        
+        if (this.getAttribute('href') !== '#') {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  
+    // Preloader
+    window.addEventListener('load', () => {
+      const preloader = document.querySelector('.preloader');
+      setTimeout(() => {
+        preloader.classList.add('hide');
+      }, 500);
+    });
+  
+    // More Services Button Functionality - To be implemented by Team Member 2
+    /*
+    const moreServicesBtn = document.getElementById('more-services-btn');
+    const hiddenServices = document.querySelectorAll('.hidden-service');
+  
+    if (moreServicesBtn) {
+      // More services button functionality will go here
+    }
+    */
+// More Services Button Functionality
+if (moreServicesBtn) {
+  moreServicesBtn.addEventListener('click', function() {
+    // Toggle hidden services visibility
+    hiddenServices.forEach(service => {
+      service.classList.toggle('show');
+    });
+    
+    // Toggle button active state and text
+    this.classList.toggle('active');
+    
+    if (this.classList.contains('active')) {
+      this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+    } else {
+      this.innerHTML = 'More Services <i class="fas fa-chevron-down"></i>';
+    }
+  });
+}
+  });
+>>>>>>> e7aa2b2376a00a3437e40a67fc1c3e8f4da0b652
