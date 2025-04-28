@@ -6,335 +6,335 @@
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .hero h1 {
-      font-size: 3.5rem;
-    }
-    
-    .hero h3 {
-      font-size: 1.6rem;
-    }
+  .hero h1 {
+    font-size: 3.5rem;
   }
   
-  /* Medium devices (tablets, less than 992px) */
-  @media (max-width: 991.98px) {
-    .hero h1 {
-      font-size: 3rem;
-    }
-    
-    .hero h3 {
-      font-size: 1.4rem;
-    }
-    
-    /* Header responsive styles */
-    .header {
-      background-color: rgba(7, 19, 24, 0.9);
-    }
-    
-    body.light-mode .header {
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-    
-    .nav-menu {
-      position: fixed;
-      top: 0;
-      right: -280px;
-      width: 280px;
-      height: 100vh;
-      background-color: var(--darker-color);
-      flex-direction: column;
-      align-items: flex-start; /* Keep menu items left-aligned on mobile menu */
-      justify-content: flex-start; /* Start from top on mobile */
-      padding: 80px 20px 30px;
-      transition: all 0.3s ease;
-      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-      z-index: 999;
-      overflow-y: auto;
-      margin-right: 0; /* Reset the margin for mobile */
-    }
-    
-    .nav-menu.active {
-      right: 0;
-    }
-    
-    .nav-item {
-      margin: 10px 0;
-      width: 100%;
-    }
-    
-    .nav-link {
-      display: block;
-      padding: 5px 0;
-      width: 100%;
-    }
-    
-    /* Dropdown menu responsive */
-    .dropdown-menu {
-      position: static;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.2);
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      box-shadow: none;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      border-radius: 5px;
-      display: none;
-      padding: 5px 0;
-    }
-    
-    .dropdown-menu::before {
-      display: none;
-    }
-    
-    .nav-item.dropdown.active .dropdown-menu {
-      display: block;
-    }
-    
-    .dropdown-menu a {
-      padding: 8px 15px;
-      font-size: 0.9rem;
-    }
-    
-    .menu-toggle {
-      display: flex;
-      z-index: 1000;
-    }
-    
-    body.light-mode .nav-menu {
-      background-color: white;
-    }
-    
-    body.light-mode .dropdown-menu {
-      background-color: rgba(0, 0, 0, 0.05);
-    }
+  .hero h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 3rem;
   }
   
-  /* Small devices (landscape phones, less than 768px) */
-  @media (max-width: 767.98px) {
-    .hero {
-      text-align: center;
-    }
-    
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    
-    .hero h3 {
-      font-size: 1.2rem;
-    }
-    
-    .hero-buttons {
-      justify-content: center;
-    }
-    
-    .section-title h2 {
-      font-size: 2rem;
-    }
-    
-    .footer-bottom {
-      flex-direction: column;
-    }
-    
-    .footer-copyright {
-      margin-bottom: 1rem;
-    }
-  
-    /* Nav Actions Responsive */
-    .nav-actions {
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-  
-    .hire-me-btn {
-      display: none; /* Hide the hire me button in mobile view, since it's inside the mobile menu */
-    }
-  
-    .search-toggle, 
-    .theme-toggle {
-      width: 35px;
-      height: 35px;
-      margin-left: 8px;
-    }
-    
-    .menu-toggle {
-      margin-left: 8px;
-    }
+  .hero h3 {
+    font-size: 1.4rem;
   }
   
-  /* Extra small devices (portrait phones, less than 576px) */
-  @media (max-width: 575.98px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-    
-    .hero p {
-      font-size: 0.9rem;
-    }
-    
-    .btn {
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-    }
-    
-    .section-title h2 {
-      font-size: 1.8rem;
-    }
-    
-    .stats-item .counter {
-      font-size: 2.5rem;
-    }
-    
-    .stats-item h3 {
-      font-size: 1rem;
-    }
-  
-    /* Nav Actions Responsive */
-    .hire-me-btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-      margin-left: 5px;
-    }
-  
-    .search-toggle, 
-    .theme-toggle,
-    .menu-toggle {
-      width: 32px;
-      height: 32px;
-      margin-left: 5px;
-    }
-    
-    .nav-menu {
-      padding-top: 70px;
-    }
+  /* Header responsive styles */
+  .header {
+    background-color: rgba(7, 19, 24, 0.9);
   }
   
-  /* Height-based media queries */
-  @media (max-height: 500px) {
-    .hero {
-      height: auto;
-      padding: 120px 0 60px;
-    }
+  body.light-mode .header {
+    background-color: rgba(255, 255, 255, 0.95);
   }
   
-  /* Client logo section responsive */
-  @media (max-width: 991.98px) {
-    .client-logo-wrapper {
-      min-width: 160px;
-      padding: 0 20px;
-    }
-    
-    .client-logo {
-      max-height: 60px;
-    }
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--darker-color);
+    flex-direction: column;
+    align-items: flex-start; /* Keep menu items left-aligned on mobile menu */
+    justify-content: flex-start; /* Start from top on mobile */
+    padding: 80px 20px 30px;
+    transition: all 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+    margin-right: 0; /* Reset the margin for mobile */
   }
   
-  @media (max-width: 767.98px) {
-    .client-logo-wrapper {
-      min-width: 140px;
-      padding: 0 15px;
-    }
-    
-    .client-logo {
-      max-height: 50px;
-    }
-    
-    .stats-container {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
+  .nav-menu.active {
+    right: 0;
   }
   
-  @media (max-width: 575.98px) {
-    .stats-container {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
+  .nav-item {
+    margin: 10px 0;
+    width: 100%;
   }
   
-  /* Footer responsive */
-  @media (max-width: 767.98px) {
-    .footer-bottom-content {
-      flex-direction: column;
-      gap: 15px;
-    }
-    
-    .social-links {
-      margin-top: 10px;
-    }
-    
-    #back-to-top {
-      right: 20px;
-      bottom: 20px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-    }
+  .nav-link {
+    display: block;
+    padding: 5px 0;
+    width: 100%;
   }
   
-  /* Print styles */
-  @media print {
-    .header, 
-    .footer, 
-    #back-to-top {
-      display: none !important;
-    }
-    
-    body {
-      color: #000;
-      background: #fff;
-    }
-    
-    a {
-      color: #000;
-      text-decoration: underline;
-    }
-    
-    .container {
-      width: 100%;
-      max-width: 100%;
-    }
-    
-    .hero, 
-    .stats,
-    .clients {
-      padding: 20px 0;
-      page-break-inside: avoid;
-    }
+  /* Dropdown menu responsive */
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: none;
+    padding: 5px 0;
   }
   
-  /* About Section Responsive - To be implemented by Team Member 1 */
-  /*
-  @media (max-width: 991.98px) {
-    /* About section responsive styles will go here */
-  /*}
-  */
+  .dropdown-menu::before {
+    display: none;
+  }
   
-  /* Services Section Responsive - To be implemented by Team Member 2 */
-  /*
-  @media (max-width: 991.98px) {
-    /* Services section responsive styles will go here */
-  /*}
-  */
+  .nav-item.dropdown.active .dropdown-menu {
+    display: block;
+  }
   
-  /* Skills Section Responsive - To be implemented by Team Member 3 */
-  /*
-  @media (max-width: 991.98px) {
-    /* Skills section responsive styles will go here */
-  /*}
-  */
+  .dropdown-menu a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
   
-  /* Portfolio Section Responsive - To be implemented by Team Member 3 */
-  /*
-  @media (max-width: 991.98px) {
-    /* Portfolio section responsive styles will go here */
-  /*}
-  */
+  .menu-toggle {
+    display: flex;
+    z-index: 1000;
+  }
   
-  /* Contact Section Responsive - To be implemented by Team Member 3 */
-  /*
-  @media (max-width: 991.98px) {
-    /* Contact section responsive styles will go here */
-  /*}
-  */
+  body.light-mode .nav-menu {
+    background-color: white;
+  }
+  
+  body.light-mode .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .hero {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h3 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+  }
+  
+  .footer-copyright {
+    margin-bottom: 1rem;
+  }
+
+  /* Nav Actions Responsive */
+  .nav-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .hire-me-btn {
+    display: none; /* Hide the hire me button in mobile view, since it's inside the mobile menu */
+  }
+
+  .search-toggle, 
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+  }
+  
+  .menu-toggle {
+    margin-left: 8px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .stats-item .counter {
+    font-size: 2.5rem;
+  }
+  
+  .stats-item h3 {
+    font-size: 1rem;
+  }
+
+  /* Nav Actions Responsive */
+  .hire-me-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+
+  .search-toggle, 
+  .theme-toggle,
+  .menu-toggle {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+  }
+  
+  .nav-menu {
+    padding-top: 70px;
+  }
+}
+
+/* Height-based media queries */
+@media (max-height: 500px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px;
+  }
+}
+
+/* Client logo section responsive */
+@media (max-width: 991.98px) {
+  .client-logo-wrapper {
+    min-width: 160px;
+    padding: 0 20px;
+  }
+  
+  .client-logo {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .client-logo-wrapper {
+    min-width: 140px;
+    padding: 0 15px;
+  }
+  
+  .client-logo {
+    max-height: 50px;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 767.98px) {
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  #back-to-top {
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header, 
+  .footer, 
+  #back-to-top {
+    display: none !important;
+  }
+  
+  body {
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .hero, 
+  .stats,
+  .clients {
+    padding: 20px 0;
+    page-break-inside: avoid;
+  }
+}
+
+/* About Section Responsive - To be implemented by Team Member 1 */
+/*
+@media (max-width: 991.98px) {
+  /* About section responsive styles will go here */
+/*}
+*/
+
+/* Services Section Responsive - To be implemented by Team Member 2 */
+/*
+@media (max-width: 991.98px) {
+  /* Services section responsive styles will go here */
+/*}
+*/
+
+/* Skills Section Responsive - To be implemented by Team Member 3 */
+/*
+@media (max-width: 991.98px) {
+  /* Skills section responsive styles will go here */
+/*}
+*/
+
+/* Portfolio Section Responsive - To be implemented by Team Member 3 */
+/*
+@media (max-width: 991.98px) {
+  /* Portfolio section responsive styles will go here */
+/*}
+*/
+
+/* Contact Section Responsive - To be implemented by Team Member 3 */
+/*
+@media (max-width: 991.98px) {
+  /* Contact section responsive styles will go here */
+/*}
+*/
