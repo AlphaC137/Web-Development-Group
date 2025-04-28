@@ -1538,3 +1538,225 @@ body.light-mode .client-logo {
 body.light-mode .client-logo-wrapper:hover .client-logo {
   filter: grayscale(0%) brightness(1);
 }
+
+/* Light Mode Styles - Comprehensive */
+body.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header light mode */
+body.light-mode .header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #eee;
+}
+
+body.light-mode .header-scrolled {
+  background-color: #ffffff;
+}
+
+/* Navigation light mode */
+body.light-mode .nav-link {
+  color: #333;
+}
+
+body.light-mode .nav-link:hover {
+  color: var(--primary-color);
+}
+
+body.light-mode .dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .dropdown-menu::before {
+  background-color: #fff;
+}
+
+body.light-mode .dropdown-menu a {
+  color: #333;
+}
+
+/* Text and headings light mode */
+body.light-mode .section-title h2,
+body.light-mode h1, 
+body.light-mode h2, 
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+  color: #333;
+}
+
+body.light-mode p {
+  color: #555;
+}
+
+/* Hero section light mode */
+body.light-mode .hero {
+  background-color: #f5f8fa;
+}
+
+body.light-mode .hero-content {
+  color: #333;
+}
+
+body.light-mode .hero p {
+  color: #555;
+}
+
+body.light-mode .btn-transparent {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .btn-transparent:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border-color: transparent;
+}
+
+body.light-mode .outlined-text {
+  -webkit-text-stroke: 2px #333;
+}
+
+/* About section light mode */
+body.light-mode .about {
+  background-color: #ffffff;
+}
+
+body.light-mode .about-content p {
+  color: #555;
+}
+
+body.light-mode .single-info p {
+  color: #555;
+}
+
+body.light-mode .follow-social a {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+/* Services section light mode */
+body.light-mode .services {
+  background-color: #f5f8fa;
+}
+
+body.light-mode .service-item {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .service-item h3 {
+  color: #333;
+}
+
+body.light-mode .service-item p {
+  color: #555;
+}
+
+/* Services Features section light mode */
+body.light-mode .services-features {
+  background-color: #ffffff;
+}
+
+body.light-mode .feature-item {
+  background-color: #f5f8fa;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .feature-text h4 {
+  color: #333;
+}
+
+body.light-mode .feature-text p {
+  color: #555;
+}
+
+/* Skills section light mode */
+body.light-mode .skills {
+  background-color: #f5f8fa;
+}
+
+body.light-mode .skills-content p {
+  color: #555;
+}
+
+body.light-mode .progress-tittle {
+  color: #333;
+}
+
+body.light-mode .progress {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio section light mode */
+body.light-mode .portfolio {
+  background-color: #ffffff;
+}
+
+body.light-mode .portfolio-overlay {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.8));
+}
+
+/* Contact section light mode */
+body.light-mode .contact {
+  background-color: #f5f8fa;
+}
+
+body.light-mode .contact-info-text h3 {
+  color: #333;
+}
+
+body.light-mode .contact-info-text p,
+body.light-mode .contact-info-text a {
+  color: #555;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Stats section light mode */
+body.light-mode .stats {
+  background-color: #ffffff;
+}
+
+body.light-mode .stats-item h3 {
+  color: #333;
+}
+
+/* Footer light mode - already defined but enhancing */
+body.light-mode .footer {
+  background-color: #f0f0f0;
+}
+
+body.light-mode .footer-logo,
+body.light-mode .footer-logo i,
+body.light-mode .logo,
+body.light-mode .logo i {
+  color: #333;
+}
+
+body.light-mode .footer-contact-info p {
+  color: #555;
+}
+
+body.light-mode .footer-bottom {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .footer-copyright {
+  color: #555;
+}
+
+body.light-mode .social-links a {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+}

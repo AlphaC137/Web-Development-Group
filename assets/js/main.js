@@ -19,17 +19,43 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('.nav-link');
   const searchToggle = document.querySelector('.search-toggle');
   const dropdownItems = document.querySelectorAll('.nav-item.dropdown');
-
+  const moreServicesBtn = document.getElementById('more-services-btn');
+  const hiddenServices = document.querySelectorAll('.hidden-service');
+  
   // Theme toggle function
   function toggleTheme() {
     body.classList.toggle('light-mode');
     const isLightMode = body.classList.contains('light-mode');
     localStorage.setItem('light-mode', isLightMode);
+    
+    // Update theme icons
+    const moonIcons = document.querySelectorAll('.fa-moon');
+    const sunIcons = document.querySelectorAll('.fa-sun');
+    
+    moonIcons.forEach(icon => {
+      icon.style.opacity = isLightMode ? '0' : '1';
+    });
+    
+    sunIcons.forEach(icon => {
+      icon.style.opacity = isLightMode ? '1' : '0';
+    });
   }
 
   // Check for saved theme preference
   if (localStorage.getItem('light-mode') === 'true') {
     body.classList.add('light-mode');
+    
+    // Update initial icon states
+    const moonIcons = document.querySelectorAll('.fa-moon');
+    const sunIcons = document.querySelectorAll('.fa-sun');
+    
+    moonIcons.forEach(icon => {
+      icon.style.opacity = '0';
+    });
+    
+    sunIcons.forEach(icon => {
+      icon.style.opacity = '1';
+    });
   }
 
   // Event Listeners
@@ -151,22 +177,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
   });
 
-// More Services Button Functionality
-if (moreServicesBtn) {
-  moreServicesBtn.addEventListener('click', function() {
-    // Toggle hidden services visibility
-    hiddenServices.forEach(service => {
-      service.classList.toggle('show');
+  // More Services Button Functionality
+  if (moreServicesBtn) {
+    moreServicesBtn.addEventListener('click', function() {
+      // Toggle hidden services visibility
+      hiddenServices.forEach(service => {
+        service.classList.toggle('show');
+      });
+      
+      // Toggle button active state and text
+      this.classList.toggle('active');
+      
+      if (this.classList.contains('active')) {
+        this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+      } else {
+        this.innerHTML = 'More Services <i class="fas fa-chevron-down"></i>';
+      }
     });
-    
-    // Toggle button active state and text
-    this.classList.toggle('active');
-    
-    if (this.classList.contains('active')) {
-      this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
-    } else {
-      this.innerHTML = 'More Services <i class="fas fa-chevron-down"></i>';
-    }
-  });
-}
+  }
 });
