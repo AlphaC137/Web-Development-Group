@@ -180,7 +180,59 @@
   </div>
 </section>
 
-<!-- Services Features Section -->
+/* Services Section */
+.services {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--darker-color);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-md);
+  border-radius: 10px;
+  transition: all var(--transition-speed);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(0, 199, 161, 0.1);
+  margin-bottom: 25px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  color: rgba(255, 255, 255, 0.7);
+}
+  <!-- </section>
+
+  <!-- Services Features Section - To be done by Team Member 2 -->
+  <!-- 
+  <section class="services-features" id="services-features">
+    <!-- Services Features section content will go here --><!-- Services Features Section -->
 <section class="services-features" id="services-features">
   <div class="container">
     <div class="row services-features-row">
@@ -253,61 +305,6 @@
     </div>
   </div>
 </section>
-  <!-- </section>
-
-  <!-- Services Features Section - To be done by Team Member 2 -->
-  <!-- 
-  <section class="services-features" id="services-features">
-    <!-- Services Features section content will go here -->
-  /* Services Section */
-.services {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--darker-color);
-}
-
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.service-item {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  transition: all var(--transition-speed);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.service-item:hover {
-  transform: translateY(-10px);
-  border-color: var(--primary-color);
-}
-
-.service-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  color: var(--primary-color);
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  background: rgba(0, 199, 161, 0.1);
-  margin-bottom: 25px;
-}
-
-.service-item h3 {
-  font-size: 1.5rem;
-  color: var(--light-color);
-  margin-bottom: 15px;
-}
-
-.service-item p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* Services Features Section */
 .services-features {
   padding: var(--spacing-xl) 0;
   background-color: var(--dark-color);
